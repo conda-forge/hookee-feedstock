@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-  {% set version = "0.0.2" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ build:
   noarch: python
   entry_points:
     - hookee=hookee.cli:hookee
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -31,7 +31,10 @@ test:
   imports:
     - hookee
   commands:
+    - pip check
     - hookee --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/alexdlaird/hookee
