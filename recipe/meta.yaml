@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f7bac526a73f5295e584b4decef48e459cfeca4da4900a47a37eb96098dea6f
+  sha256: 752548a5ae4803b5b1a3e70b7f3fdd99595a52dfce11f6ee8c92f50ba2e5247d
 
 build:
   noarch: python
   entry_points:
     - hookee=hookee.cli:hookee
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Command line webhooks, on demand'
+  summary: Command line webhooks, on demand
   description: |
     hookee is a simple command line utility which generates webhooks on demand and dumps useful information
     to the console when requests are sent to those endpoints.
