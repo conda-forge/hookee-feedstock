@@ -27,6 +27,7 @@ requirements:
     - confuse
     - python-dotenv
     - flask
+    - pyngrok
 
 test:
   imports:
