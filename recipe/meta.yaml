@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 752548a5ae4803b5b1a3e70b7f3fdd99595a52dfce11f6ee8c92f50ba2e5247d
+  sha256: becbb0e2db41ea87ead2e2eb330f1b4c1a232f6ce08a016854cb1be5e964ef80
 
 build:
   noarch: python
@@ -23,7 +23,8 @@ requirements:
   run:
     - python
     - future
-    - pyngrok
+    - pluginbase
+    - confuse
     - python-dotenv
     - flask
 
