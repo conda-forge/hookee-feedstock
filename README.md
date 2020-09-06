@@ -9,8 +9,9 @@ Feedstock license: BSD-3-Clause
 
 Summary: Command line webhooks, on demand
 
-hookee is a simple command line utility which generates webhooks on demand and dumps useful information
-to the console when requests are sent to those endpoints.
+hookee is a utility that provides command line webhooks, on demand! Dump useful request data to the
+console, process requests and responses, customize response data, and configure hookee and its routes
+further in any number of ways through custom plugins.
 
 
 Current build status
