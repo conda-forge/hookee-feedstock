@@ -13,7 +13,7 @@ build:
   noarch: python
   entry_points:
     - hookee=hookee.cli:hookee
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -45,8 +45,9 @@ about:
   license_file: LICENSE
   summary: Command line webhooks, on demand
   description: |
-    hookee is a simple command line utility which generates webhooks on demand and dumps useful information
-    to the console when requests are sent to those endpoints.
+    hookee is a utility that provides command line webhooks, on demand! Dump useful request data to the
+    console, process requests and responses, customize response data, and configure hookee and its routes
+    further in any number of ways through custom plugins.
   dev_url: https://github.com/alexdlaird/hookee
 
 extra:
