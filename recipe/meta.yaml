@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 026324e505a843e4b61ab0ac79c62c83b6cf71e47dc114c7f1e9cc2289f5f269
+  sha256: aa3c85d76a0b56e049173b5171b7e9546d666730f6154001bc1c5d91726bd85e
 
 build:
   noarch: python
   entry_points:
     - hookee=hookee.cli:hookee
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
