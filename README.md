@@ -5,9 +5,11 @@ Home: https://github.com/alexdlaird/hookee
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hookee-feedstock/blob/master/LICENSE.txt)
 
 Summary: Command line webhooks, on demand
+
+Development: https://github.com/alexdlaird/hookee
 
 hookee is a utility that provides command line webhooks, on demand! Dump useful request data to the
 console, process requests and responses, customize response data, and configure hookee and its routes
