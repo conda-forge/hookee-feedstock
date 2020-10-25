@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-{% set version = "1.2.5" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8354b603c6310c5cb9021115de9785854783977363e8f8686e181b76e85a4c8b
+  sha256: 789e0ff5a1dd4424b98ffcfbf7586c1dd35c397952cac10de38a3e23e2158022
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - python-dotenv
     - flask
     - click
-    - pyngrok >=4.1,<4.2
+    - pyngrok >=5.0.0
 
 test:
   imports:
