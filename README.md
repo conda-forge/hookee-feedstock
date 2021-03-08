@@ -123,6 +123,3 @@ Feedstock Maintainers
 
 * [@alexdlaird](https://github.com/alexdlaird/)
 
-
-<!-- dummy commit to enable rerendering -->
-
