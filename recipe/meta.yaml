@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a561f79a3f6ac897c7fdf4d56fcb18def6e40043b12e2ec7f67d60530dc58403
+  sha256: 4245f88231d572ecf63d72677028ba4a9dacc7135731bc9a3118e443eedff4df
 
 build:
   noarch: python
   entry_points:
     - hookee=hookee.cli:hookee
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,10 +24,14 @@ requirements:
     - python >=3.5
     - pluginbase
     - confuse
-    - flask >=1.1.0, <2.0.0
-    - MarkupSafe >=0.23, <2.1.0
+    - flask >=1.1.0,<2.0.0
     - click
     - pyngrok >=5.2.1
+    # Remove these pinned deps once hookee is updated to work with Flask 2.x
+    - MarkupSafe >=0.23,<2.1.0
+    - Jinja2 <3.0,>=2.10.1
+    - itsdangerous ==2.0.1
+    - werkzeug ==2.0.3
 
 test:
   imports:
