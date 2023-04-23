@@ -26,7 +26,8 @@ requirements:
     - confuse
     - flask >=1.1.0,<2.0.0
     - click
-    - pyngrok >=5.2.1
+    - pyngrok >=5.2.3
+    - defusedxml
     # Remove these pinned deps once hookee is updated to work with Flask 2.x
     - MarkupSafe >=0.23,<2.1.0
     - Jinja2 <3.0,>=2.10.1
