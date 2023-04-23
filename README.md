@@ -1,11 +1,11 @@
-About hookee
-============
+About hookee-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hookee-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/alexdlaird/hookee
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hookee-feedstock/blob/main/LICENSE.txt)
 
 Summary: Command line webhooks, on demand
 
