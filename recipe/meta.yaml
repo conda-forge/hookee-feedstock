@@ -13,20 +13,20 @@ build:
   noarch: python
   entry_points:
     - hookee=hookee.cli:hookee
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
   run:
-    - python >=3.5
+    - python >=3.8
     - pluginbase
     - confuse
     - flask >=1.1.0,<2.0.0
     - click
-    - pyngrok >=5.2.3
+    - pyngrok >=7.0.0
     - defusedxml
     # Remove these pinned deps once hookee is updated to work with Flask 2.x
     - MarkupSafe >=0.23,<2.1.0
