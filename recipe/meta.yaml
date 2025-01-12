@@ -1,13 +1,13 @@
 {% set name = "hookee" %}
-{% set version = "2.3.7" %}
+{% set version = "2.3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 574af508bb05081ab66b8542234d42d81f5c4214b8da072c10b5ee0711cbf986
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 80f84fa0e622d48af666803c4d1565ee29f91a6170e7d4067b46db388c559900
 
 build:
   noarch: python
