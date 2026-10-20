@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-{% set version = "2.4.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 00a228e455ab6efd5d184ce4c9a43cb8bd06bbe050e76dae1dd2b10fe7a8cc86
+  sha256: 062e7108b2c2194cd5b7debd1a2f82b9e7d316c77d51a3ebe9b15686f7e94c2b
 
 build:
   noarch: python
@@ -23,12 +23,13 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - pluginbase >=1
-    - confuse >=1.3
-    - flask >=1.1
-    - click >=7.1
-    - pyngrok >=7.1
-    - defusedxml >=0.6
+    - pluginbase >=1.0.1
+    - confuse >=2.1.0
+    - typing_extensions >=4.16.0
+    - flask >=3.1.3
+    - click >=8.1.8
+    - pyngrok >=9.0.0
+    - defusedxml >=0.7.1
 
 test:
   imports:
@@ -45,11 +46,11 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Command line webhooks, on demand
+  summary: "Command line webhooks, on demand: see, answer, forward, and capture requests from your terminal"
   description: |
-    hookee is a utility that provides command line webhooks, on demand! Dump useful request data to the
-    console, process requests and responses, customize response data, and configure hookee and its routes
-    further in any number of ways through custom plugins.
+    hookee gives you a public URL to your terminal with one command. Point any service's webhooks at it, then see,
+    answer, and forward every request as it happens, with no code.
+  doc_url: https://hookee.readthedocs.io/
   dev_url: https://github.com/alexdlaird/hookee
 
 extra:
