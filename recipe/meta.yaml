@@ -1,13 +1,13 @@
 {% set name = "hookee" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 062e7108b2c2194cd5b7debd1a2f82b9e7d316c77d51a3ebe9b15686f7e94c2b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2fad9cf3a2caaa0efb3e8f463d8e2eb18cf24fbee0d9be09b51e7726fef8340d
 
 build:
   noarch: python
