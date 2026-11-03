@@ -1,5 +1,5 @@
 {% set name = "hookee" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2fad9cf3a2caaa0efb3e8f463d8e2eb18cf24fbee0d9be09b51e7726fef8340d
+  sha256: 5a1227479e74bc4ee3a4c8084b22360ba0c06583cbed87c7e61d95082791f5d0
 
 build:
   noarch: python
